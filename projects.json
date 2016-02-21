@@ -2,6 +2,7 @@
 	"projects": {
 		"countdown": {
 			"name": "Countdown",
+			"description": "Displays a countdown to a set time",
 			"path": "countdown/$1",
 			"versions": [
 				{
