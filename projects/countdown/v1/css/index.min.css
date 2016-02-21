@@ -1,0 +1,1 @@
+html,body{margin:0}#countdown{display:flex;justify-content:center;align-items:center}#countdown div{font-size:76px;text-align:center;font-family:'Roboto', sans-serif}#countdown div.number{width:82px;letter-spacing:-0.06em}#countdown div.colon{width:14px}#countdown div.colon:after{content:':'}

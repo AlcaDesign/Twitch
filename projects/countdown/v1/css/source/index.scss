@@ -1,0 +1,30 @@
+// compileCompressed: ..\$1.min.css
+
+html,
+body {
+	margin: 0;
+}
+
+#countdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	div {
+		font-size: 76px;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		
+		&.number {
+			width: 82px;
+			letter-spacing: -0.06em;
+		}
+		&.colon {
+			width: 14px;
+			
+			&:after {
+				content: ':';
+			}
+		}
+	}
+}
