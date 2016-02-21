@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project Index</title>
+<link rel="stylesheet" href="css/index.min.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+
+<div>
+	
+</div>
+
+<script>
+	
+	/* jshint esversion: 6 */
+	
+	fetch('https://api.github.com/repos/alcadesign/Twitch/contents/projects')
+		.then(res => res.json())
+		.then(console.log.bind(console));
+	
+</script>
+
+</body>
+</html>
