@@ -1,0 +1,12 @@
+{
+	"projects": {
+		"countdown": {
+			"path": "countdown",
+			"versions": [
+				{
+					"name": "v1"
+				}
+			]
+		}
+	}
+}

@@ -5,6 +5,7 @@
 <title>Project Index</title>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/index.min.css" media="screen" charset="utf-8">
+<script src="js/APIs.js"></script>
 </head>
 
 <body>
@@ -17,8 +18,7 @@
 	
 	/* jshint esversion: 6 */
 	
-	fetch('https://api.github.com/repos/alcadesign/Twitch/contents/projects')
-		.then(res => res.json())
+	APIs.github({ url: 'repos/alcadesign/Twitch/contents/projects' })
 		.then(console.log.bind(console));
 	
 </script>
