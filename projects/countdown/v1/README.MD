@@ -10,6 +10,6 @@ You can append these parameters to the url to configure the behavior:
 
 ### Parameters
 
-| Name | Functionality |
-|-----------|-------------------------|
-| countdown | A valid Javascript date |
+| Name | Functionality | Example |
+|-----------|-------------------------|-----------------------|
+| countdown | A valid Javascript date | 2/21/2016 8:00 pm CST |
