@@ -1,7 +1,8 @@
 {
 	"projects": {
 		"countdown": {
-			"path": "countdown",
+			"name": "Countdown",
+			"path": "countdown/$1",
 			"versions": [
 				{
 					"name": "v1"
