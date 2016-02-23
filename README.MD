@@ -6,7 +6,7 @@
 
 These requirements go for most of the projects in this repository, but some may specify other things to add.
 
-- Streaming software like OBS, XSplit, or any other streaming software that supports web browser sources. (I don't suggest keying a capture of a browser window as it is a low-quality solution)
+- Streaming software like [OBS](https://obsproject.com/), [XSplit](https://www.xsplit.com/), or any other streaming software that supports web browser sources. (I don't suggest keying a capture of a browser window as it is a low-quality solution)
 - [NodeJS](http://nodejs.org/) v5.6.x or higher
 	- with NPM
 - [Git](https://git-scm.com/download/) v1.x.x or higher.
