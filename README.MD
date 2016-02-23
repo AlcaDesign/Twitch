@@ -32,7 +32,7 @@ In the interest of these projects, some will require you to use a command prompt
 - *Unix systems*: this looks like "user@host: directory $"
 - When you see `$ <command here>`, it wants to to put the command into the related terminal/console
 
-#### How to **"cd"** into a folder
+### How to **"cd"** into a folder
 If you see "`$ cd` into the folder", this means to open a command prompt and change the directory using the "cd" command.
 
 As I only use a Windows desktop machine, the only shortcut I know is:
@@ -41,10 +41,10 @@ As I only use a Windows desktop machine, the only shortcut I know is:
 - Click on the address bar or press `alt` + `D` to focus there
 - Type "cmd" to open a Command Prompt that is defaulted to this folder
 
-#### **Start** a script
+### **Start** a script
 Type "`npm start`" or whatever may be specified in the project's README and press enter. Generally, you may use the command "`$ node index.js`" to start most scripts if the previous fails.
 
-#### **Stop** a script
+### **Stop** a script
 Press the `ctrl` + `C` shortcut. It may take multiple times to completely end a script. It's alright to use this when it says "Terminate batch job (Y/N)?" instead of typing "y" and pressing enter
 
 
