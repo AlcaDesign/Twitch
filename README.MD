@@ -37,3 +37,8 @@ Type "`npm start`" or whatever may be specified in the project's README and pres
 
 #### Stop a script
 Press the `ctrl` + `C` shortcut. It may take multiple times to completely end a script. It's alright to use this when it says "Terminate batch job (Y/N)?" instead of typing "y" and pressing enter
+
+
+## Questions and Suggestions
+
+If you have any questions or suggests to add, either start an issue or open a pull request.
