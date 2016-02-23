@@ -2,7 +2,7 @@
 
 ---
 
-## General Requirements
+## General Install Requirements
 
 These requirements go for most of the projects in this repository, but some may specify other things to add.
 
