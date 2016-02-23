@@ -18,6 +18,7 @@ These requirements go for most of the projects in this repository, but some may 
 In order to use some of these projects, you may have to install software and/or "clone this repository." This means that you will need to download the contents in this repository to your local machine. You can either:
 - Download it [as a .zip](https://github.com/AlcaDesign/Twitch/archive/gh-pages.zip) and extract the files
 - Use "git" in a terminal
+	- `$ git clone https://github.com/AlcaDesign/Twitch.git`
 
 ## How to use a terminal
 
