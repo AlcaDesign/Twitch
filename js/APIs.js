@@ -11,19 +11,23 @@ function API(config) {
 	this.base = config.base;
 	this.config = config;
 	return opts => {
+			if(opts === undefined) {
+				return Promise.reject(
+						new TypeError('No options specified')
+					);
+			}
 			var method = (opts.method || 'GET').toUpperCase();
-			opts.method = method;
+			if(opts.headers === undefined) {
+				opts.headers = {};
+			}
+			opts.headers.method = method;
 			if(method === 'GET') {
 				return this.fetch(opts);
 			}
-			/*else if(method === 'POST') {
-				return this.post(opts);
-			}
-			else if(method === 'PATCH') {
-				return this.patch(opts);
-			}*/
 			else {
-				return this.fetch(opts);
+				return Promise.reject(
+						new Error('Unupported method')
+					);
 			}
 		};
 }
@@ -35,40 +39,7 @@ API.prototype.fetch = function(options) {
 			});
 	};
 
-/*API.prototype.post = function(options) {
-		var headers = new Headers();
-		if(options.headers) {
-			each(options.headers, (val, key) => {
-					console.log(val, key);
-					headers.append(key, val);
-				});
-		}
-		headers.append('method', 'POST');
-		options.headers = headers;
-		console.log(headers);
-		return this.fetch(options);
-	};
-
-API.prototype.patch = function(options) {
-		var headers = new Headers();
-		if(options.headers) {
-			each(options.headers, (val, key) => {
-					headers.append(key, val);
-				});
-		}
-		headers.method = 'POST';
-		options.headers = headers;
-		console.log(headers);
-		return this.fetch(options);
-	};*/
-
-/*
-	
-	** * * *** * * ** * * *** * * ** * * *** * * **
-	
-*/
-
-var api = {};
+var api = new API({ base: '' });
 
 api.github = new API({
 			base: 'https://api.github.com/'

@@ -5,6 +5,7 @@
 <title>Project Index</title>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/index.min.css" media="screen" charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.0/lodash.min.js"></script>
 <script src="js/APIs.js"></script>
 </head>
 
@@ -12,17 +13,7 @@
 
 <div></div>
 
-<script>
-	
-	/* jshint esversion: 6 */
-	
-	APIs.github({ url: 'repos/AlcaDesign/Twitch/contents/projects.json' })
-		.then(data => atob(data.content))
-		.then(JSON.parse)
-		.then(data => data.projects)
-		.then(console.log.bind(console));
-	
-</script>
+<script src="js/index.js"></script>
 
 </body>
 </html>
