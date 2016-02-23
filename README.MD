@@ -12,7 +12,7 @@ These requirements go for most of the projects in this repository, but some may 
 - [Git](https://git-scm.com/download/) v1.x.x or higher.
 	- I suggest choosing to "Use Git from the Windows Command Prompt" in Windows and however it applies elsewhere. Default options are perfect, otherwise.
 
-## How to use a Windows Command Prompt
+## How to use a terminal
 
 In the interest of these projects, some will require you to use a command prompt in order to make things work. Things like installing dependencies, running web servers, and more.
 
