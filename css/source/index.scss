@@ -66,6 +66,9 @@ a:hover {
 .section {
 	padding: 3em 0;
 	
+	&:not(:last-of-type) {
+		padding-bottom: 0;
+	}
 	& > div {
 		margin: 0 auto;
 	}
@@ -74,6 +77,7 @@ a:hover {
 #jumbo {
 	background-color: hsla(0, 0%, 100%, 0.13);
 	padding-top: 7.375em;
+	padding-bottom: 3em;
 	
 	#jumbo-text {
 		margin-bottom: 1em;
