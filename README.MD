@@ -52,17 +52,14 @@ Press the `ctrl` + `C` shortcut. It may take multiple times to completely end a 
 
 These are color inputs that are taken by CSS and are allowed for use in the projects. All of the examples are equivalent to each other.
 
-### HEX
-	#08F
-	#0088FF
-
-### RGB
-	rgb(0, 136, 255)
-	rgba(0, 136, 255, 0.5)
-
-### HSL
-	hsl(208, 100%, 50%)
-	hsla(208, 100%, 50%, 0.5)
+| Type | Example                     |
+|------|-----------------------------|
+| HEX  | `#08F`                      |
+|      | `#0088FF`                   |
+| RGB  | `rgb(0, 136, 255)`          |
+|      | `rgba(0, 136, 255, 0.5)`    |
+| HSL  | `hsl(208, 100%, 50%)`       |
+|      | `hsla(208, 100%, 50%, 0.5)` |
 
 
 ## Questions, Suggestions, Requests
