@@ -4,6 +4,7 @@
 			"name": "Countdown",
 			"description": "Displays a countdown to a set time",
 			"path": "countdown/$1",
+			"md_icon": "timer",
 			"versions": [
 				{
 					"name": "v1"
