@@ -14,13 +14,15 @@ function getProjects() {
 
 function simplifyProjectsList(data) {
 	return _.map(data, (proj, projectKey, projects) => {
-			var vers = proj.versions[proj.versions.length - 1].name;
+			var vers = proj.versions[proj.versions.length - 1].name,
+				icon = _.find(proj, (n, i) =>
+					_.includes(['icon','md_icon'], i.toLowerCase()));
 			return {
 					name: proj.name,
 					desc: proj.description,
 					path: vers.replace(/(.*)/, proj.path),
 					vers: vers, //TODO: ES6-ify
-					icon: proj.md_icon
+					icon: icon // TODO ES6-ify
 				};
 		})
 }
