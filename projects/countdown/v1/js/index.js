@@ -8,6 +8,10 @@ var elements = {
 	countdownDate = Date.parse(qs.countdown),
 	anim = requestAnimationFrame(draw);
 
+if(qs.hasOwnProperty('color') && typeof qs.color == 'string') {
+	elements.countdown.style.color = qs.color;
+}
+
 function parseQS() {
 	return location.search.substr(1)
 			.split('&')
