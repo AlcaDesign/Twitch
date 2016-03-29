@@ -36,7 +36,7 @@ function generateProjectItem(item) {
 				'<a icon="' + item.icon + '" target="_blank" href="' + projectPath + '">' +
 					'<div class="project-name">' +
 						item.name +
-						' <span class="project-vers">' + item.vers_title + '</span>' +
+						' <span class="project-vers">' + item.v_ti + '</span>' +
 					'</div>' +
 					'<div class="project-desc">' + item.desc + '</div>' +
 				'</a>' +
