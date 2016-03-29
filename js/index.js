@@ -14,7 +14,9 @@ function getProjects() {
 
 function simplifyProjectsList(data) {
 	return _.map(data, (proj, projectKey, projects) => {
-			var vers = proj.versions[proj.versions.length - 1].name,
+			var lastVers = _.last(proj.versions),
+				vers = lastVers.name,
+				v_ti = lastVers.title,
 				icon = _.find(proj, (n, i) =>
 					_.includes(['icon','md_icon'], i.toLowerCase()));
 			return {
@@ -22,6 +24,7 @@ function simplifyProjectsList(data) {
 					desc: proj.description,
 					path: vers.replace(/(.*)/, proj.path),
 					vers: vers, //TODO: ES6-ify
+					v_ti: v_ti, //TODO: ES6-ify
 					icon: icon // TODO ES6-ify
 				};
 		})
@@ -33,7 +36,7 @@ function generateProjectItem(item) {
 				'<a icon="' + item.icon + '" target="_blank" href="' + projectPath + '">' +
 					'<div class="project-name">' +
 						item.name +
-						' <span class="project-vers">' + item.vers + '</span>' +
+						' <span class="project-vers">' + item.vers_title + '</span>' +
 					'</div>' +
 					'<div class="project-desc">' + item.desc + '</div>' +
 				'</a>' +
