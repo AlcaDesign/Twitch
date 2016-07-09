@@ -1,0 +1,17 @@
+html,
+body {
+	font-family: 'Arimo', cursive;
+}
+
+#subcount {
+	font-size: 42px;
+}
+
+#subcount div {
+	width: 24px;
+	display: inline-block;
+}
+
+#subcount div:nth-last-child(4n) {
+	width: 12px;
+}

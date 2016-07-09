@@ -11,6 +11,18 @@
 					"name": "v1"
 				}
 			]
+		},
+		"live-youtube-subs": {
+			"name": "Live YouTube Subscribers",
+			"description": "Live-ish updating YouTube subscriber count.",
+			"path": "live-youtube-subs/$1",
+			"md_icon": "people",
+			"versions": [
+				{
+					"title": "v1.0",
+					"name": "v1"
+				}
+			]
 		}
 	}
 }
