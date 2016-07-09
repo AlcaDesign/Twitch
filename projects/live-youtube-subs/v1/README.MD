@@ -13,3 +13,4 @@ You can append these parameters to the url to configure the behavior:
 | Name | Functionality | Example |
 |-----------|-------------------------|-----------------------|
 | username | YouTube username | pewdiepie |
+| color | A valid css color | white |

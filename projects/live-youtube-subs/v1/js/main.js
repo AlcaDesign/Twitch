@@ -3,7 +3,8 @@ const google = {
 		},
 	displayElement = document.getElementById('subcount');
 
-let username = '',
+let qs = {},
+	username = '',
 	lastCount = 0,
 	sameInARow = 0;
 
@@ -85,7 +86,11 @@ function loop() {
 }
 
 function begin() {
-	username = getSearch().username;
+	qs = getSearch();
+	username = qs.username;
+	if(qs.hasOwnProperty('color') && typeof qs.color == 'string') {
+		displayElement.style.color = qs.color;
+	}
 	return loop()
 		.catch(err => {
 			if(err instanceof Error) {

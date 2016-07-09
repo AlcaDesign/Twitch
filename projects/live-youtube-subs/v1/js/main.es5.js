@@ -5,7 +5,8 @@ var google = {
 },
     displayElement = document.getElementById('subcount');
 
-var username = '',
+var qs = {},
+    username = '',
     lastCount = 0,
     sameInARow = 0;
 
@@ -81,7 +82,11 @@ function loop() {
 }
 
 function begin() {
-	username = getSearch().username;
+	qs = getSearch();
+	username = qs.username;
+	if (qs.hasOwnProperty('color') && typeof qs.color == 'string') {
+		displayElement.style.color = qs.color;
+	}
 	return loop().catch(function (err) {
 		if (err instanceof Error) {
 			console.log(err);
