@@ -5,7 +5,7 @@
 Open this link in a browser, fill in the "channel" input and then press enter or
 click the "connect" button.
 
-> `http://alcadesign.github.io/Twitch/projects/line-bot/v1/`
+> `https://alcadesign.github.io/Twitch/projects/line-bot/v1/`
 
 Options are automatically saved to the URL hash so you can reload or bookmark a
 pre-setup page.

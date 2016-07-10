@@ -4,7 +4,7 @@
 
 In your streaming software, create a browser source and use the URL
 
-> `http://alcadesign.github.io/Twitch/projects/countdown/v1/`
+> `https://alcadesign.github.io/Twitch/projects/countdown/v1/`
 
 You can append these parameters to the url to configure the behavior:
 
