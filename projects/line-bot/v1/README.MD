@@ -15,3 +15,22 @@ the input boxes in the "commands" section. Pressing the "clear all" button will
 remove everyone from the line. You can remove specific users by clicking the "x"
 by each name. You can sort the list by simply clicking and dragging a name in
 the list.
+
+The commands take 1 parameter to insert a specified name into the list. This
+functionality is only available to moderators and up.
+
+Example:
+
+```
+Alca: !joinline
+> "Alca" gets added to the line
+
+Alca: !joinline OtherPerson
+> "OtherPerson" gets added to the line
+
+Alca: !leaveline otherperson
+> "OtherPerson" gets removed from the line
+
+Alca: !leaveline alCA
+> "Alca" gets removed from the line
+```
