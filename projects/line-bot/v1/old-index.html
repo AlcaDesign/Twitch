@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Line Bot</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+<link href="css\main.min.css" rel="stylesheet">
+
+<script src="https://cdn.tmijs.org/js/1.0.0/tmi.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="body">
+	
+	<div id="title" class="underlined">Twitch Chat Line Bot (-ish)</div>
+
+	<div id="options" class="disconnected underlined">
+		
+		<div id="connection" class="option-group">
+			
+			<label>
+				<b>Channel:</b>
+				<input type="text" placeholder="Channel" id="channel" />
+			</label>
+			<input type="button" value="Connect" id="connect" />
+			<input type="button" value="Disconnect" disabled id="disconnect" />
+			
+		</div>
+		
+		<div id="status" class="option-group underlined">
+			
+			<div id="connection-status">
+				<div></div>
+				<span>Disconnected</span>
+			</div>
+			
+			<div id="join-status">Parted</div>
+			
+		</div>
+		
+		<div id="commands" class="option-group">
+			
+			<div class="header-2">Commands: (case-insensitive)</div>
+			<div class="indented">
+				<label>
+					<b>Join:</b>
+					<input type="text" placeholder="joinline" value="joinline" id="command-join" />
+				</label>
+				<label>
+					<b>Leave:</b>
+					<input type="text" placeholder="leaveline" value="leaveline" id="command-leave" />
+				</label>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div id="line">
+		<div class="header-1">Line:</div>
+		<div id="list"></div>
+	</div>
+	
+</div>
+
+<script src="js/module.js"></script>
+<script src="js/main.js"></script>
+<script src="js/commands.js"></script>
+
+</body>
+</html>

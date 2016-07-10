@@ -1,0 +1,173 @@
+html, body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #1f1f1f;
+	color: rgba(255, 255, 255, 0.96);
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+body {
+	margin: 15px;
+}
+
+input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.96);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 4px 8px;
+	transition: background-color 1s, opacity 300ms;
+}
+
+input:disabled {
+	opacity: 0.4;
+}
+
+input.alert {
+	transition: none;
+	background-color: rgba(255, 0, 0, 0.3);
+}
+
+.underlined {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+.option-group:not(:last-child) {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.header-1,
+.header-2 {
+	margin: 2px 0 8px;
+}
+
+.header-1 {
+	font-size: 28px;
+}
+
+.header-2 {
+	font-size: 22px;
+}
+
+.indented {
+	padding-left: 20px;
+}
+
+#body {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	width: 400px;
+}
+
+#body #title {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+#options label:not(:last-of-type) {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#options b + input {
+	margin-left: 6px;
+}
+
+#options #status:before, #options #status:after {
+	content: " ";
+	display: table;
+}
+
+#options #status:after {
+	clear: both;
+}
+
+#options #status #connection-status {
+	display: flex;
+	align-items: center;
+	float: left;
+}
+
+#options #status #connection-status div {
+	width: 8px;
+	height: 8px;
+	margin: 0 10px;
+	background-color: gray;
+}
+
+#options #status #join-status {
+	float: right;
+}
+
+#options.disconnected #join-status {
+	display: none;
+}
+
+#options #commands .indented label:after {
+	content: '!';
+	margin-left: -153px;
+	font-size: 14px;
+}
+
+#line {
+	flex: 1 1 auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+#line #clear-line {
+	position: relative;
+	left: 12px;
+	bottom: 4px;
+}
+
+#line #list {
+	overflow: scroll;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 45px;
+}
+
+#line .list-item {
+	font-size: 24px;
+}
+
+#line .list-item.sortable-ghost {
+	opacity: 0.9;
+}
+
+#line .list-item.sortable-chosen {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+#line .list-item .item-name {
+	display: inline-block;
+}
+
+#line .list-item .item-remove {
+	display: inline-block;
+	opacity: 0.4;
+	margin-right: 4px;
+	cursor: pointer;
+	height: 29px;
+	width: 29px;
+	text-align: center;
+}
+
+#line .list-item .item-remove:hover {
+	opacity: 1;
+	background-color: #7a1f1f;
+}
+
+#line .list-item .item-remove:before {
+	content: 'x';
+	position: relative;
+	bottom: 2px;
+}

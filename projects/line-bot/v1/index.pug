@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title Line Bot
+		link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700", rel="stylesheet")
+		link(href="css/main.min.css", rel="stylesheet")
+		script(src="https://cdn.tmijs.org/js/1.1.1/tmi.min.js")
+		script(src="https://rubaxa.github.io/Sortable/Sortable.js")
+	body
+		#body
+			#title.underlined Twitch Chat Line Bot (-ish)
+			#options.disconnected.underlined
+				#connection.option-group
+					label
+						b Channel:
+						input#channel(type="text", placeholder="Channel")
+					input#connect(type="button", value="Connect")
+					input#disconnect(type="button", value="Disconnect", disabled)
+				#status.option-group.underlined
+					#connection-status
+						div
+						span Disconnected
+					#join-status Parted
+				#commands.option-group
+					.header-2 Commands: (case-insensitive)
+					.indented
+						label
+							b Join:
+							input#command-add(type="text", placeholder="joinline", value="joinline")
+						label
+							b Leave:
+							input#command-remove(type="text", placeholder="leaveline", value="leaveline")
+			#line
+				.header-1 Line:
+					input#clear-line(type="button", value="Clear all")
+				#list
+		script(src="js/module.js")
+		script(src="js/variables.js")
+		script(src="js/settings.js")
+		script(src="js/line.js")
+		script(src="js/commands.js")
+		script(src="js/chat.js")
+		script(src="js/main.js")

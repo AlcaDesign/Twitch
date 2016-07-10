@@ -12,6 +12,18 @@
 				}
 			]
 		},
+		"line-bot": {
+			"name": "Line Bot-ish",
+			"description": "A simple way to create a line of users from chat.",
+			"path": "line-bot/$1",
+			"md_icon": "format_list_numbered",
+			"versions": [
+				{
+					"title": "v1.0",
+					"name": "v1"
+				}
+			]
+		},
 		"live-youtube-subs": {
 			"name": "Live YouTube Subscribers",
 			"description": "Live-ish updating YouTube subscriber count.",
