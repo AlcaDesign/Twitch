@@ -87,7 +87,7 @@ function begin() {
 	if (qs.hasOwnProperty('color') && typeof qs.color == 'string') {
 		displayElement.style.color = qs.color;
 	}
-	return loop().catch(function (err) {
+	return loop()['catch'](function (err) {
 		if (err instanceof Error) {
 			console.log(err);
 			if (err.message === 'No user found') {
