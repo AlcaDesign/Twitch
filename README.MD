@@ -7,10 +7,10 @@ Work in progress.
 
 These requirements go for most of the projects in this repository, but some may specify other things to add. Some projects *may not* require you to even clone this repository.
 
-- [NodeJS](http://nodejs.org/) v6.4.x or higher
-	- with NPM
 - [Git](https://git-scm.com/download/) v1.x.x or higher.
 	- I suggest choosing to "Use Git from the Windows Command Prompt" in Windows and however it applies elsewhere. Default options are perfect, otherwise.
+- [NodeJS](http://nodejs.org/) v6.4.x or higher
+	- with NPM
 - Streaming software like [OBS](https://obsproject.com/), [XSplit](https://www.xsplit.com/), or any other streaming software that supports web browser sources. (I don't suggest keying a capture of a browser window as it is a low-quality solution)
 
 ## How to clone this repository
