@@ -3,14 +3,58 @@
 <head>
 	<meta charset="utf-8" />
 	<title>List of Twitch bookmarklets</title>
+	<script>
+		@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+		body {
+			background: hsl(0, 0%, 8%);
+			color: white;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		a {
+			color: hsl(210, 80%, 60%);
+			font-weight: 700;
+			text-decoration: none;
+			font-size: 1.25em;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		section {
+			margin-left: 4px;
+			padding: 4px 0 4px 16px;
+			border-left: 4px solid hsl(210, 100%, 50%);
+		}
+
+		section:not(:last-child) {
+			margin-bottom: 16px;
+		}
+
+		code {
+
+		}
+
+		code.example {
+			display: block;
+			margin: 8px 0;
+		}
+	</script>
 </head>
 <body>
 <div>
-	<a href="javascript:open(document.querySelector('video').src)">DL Clip</a>
-	<br>
-	<code>javascript:open(document.querySelector('video').src)</code>
-	<br>
-	As of <time datetime="2018-05-15">May 15, 2018</time>
+	<h1>Twitch Bookmarklets</h1>
+	<p>Click and drag the blue text to the bookmark bar</p>
+	<div>
+		<section>
+			<h2>Download Clips</h2>
+			<a href="javascript:open(document.querySelector('video').src)">DL Clip</a>
+			<code class="example">javascript:open(document.querySelector('video').src)</code>
+			<p>As of <time datetime="2018-05-15">May 15, 2018</time></p>
+		</section>
+	</div>
 </div>
 </body>
 </html>
